@@ -1,3 +1,9 @@
+Version 2.1.1.0 (not yet official)
+July 7, 2014
+
+Support PNG files with compressed XMP data in the style of ImageMagick
+Contributor: John Thomson
+-------------------------------------------------------------------------------
 Version 2.1.0.0
 July 3, 2012
 
