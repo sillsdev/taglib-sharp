@@ -1,4 +1,4 @@
-AC_INIT([taglib-sharp], [2.1.0.0])
+AC_INIT([taglib-sharp], [2.1.1.0])
 AM_INIT_AUTOMAKE([1.9 dist-bzip2 tar-ustar])
 AM_MAINTAINER_MODE
 
@@ -83,18 +83,6 @@ else
 	AC_MSG_NOTICE([not building Banshee API documentation])
 	AM_CONDITIONAL(BUILD_DOCS, false)
 fi
-
-# checking for ICSharpCode.SharpZipLib.dll
-AC_MSG_CHECKING([Mono GAC for ICSharpCode.SharpZipLib.dll])
-if $GACUTIL -l | $GREP -q ICSharpCode.SharpZipLib; \
-	then \
-	AC_MSG_RESULT([found])
-	AM_CONDITIONAL(HAVE_SHARPZIPLIB, true)
-else
-	AC_MSG_RESULT([not found])
-	AM_CONDITIONAL(HAVE_SHARPZIPLIB, false)
-fi
-
 
 PKG_CHECK_MODULES(GNOME_SHARP, gnome-sharp-2.0, have_gnome_sharp=yes, have_gnome_sharp=no)
 if test "x$have_gnome_sharp" = "xyes"; then
