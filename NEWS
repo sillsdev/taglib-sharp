@@ -1,3 +1,9 @@
+Version 2.1.2.0 (not yet official)
+January 29, 2015
+
+Avoid copying JPG image contents into metadata when image has strip offsets
+Contributor: John Thomson
+-------------------------------------------------------------------------------
 Version 2.1.1.0 (not yet official)
 July 7, 2014
 
