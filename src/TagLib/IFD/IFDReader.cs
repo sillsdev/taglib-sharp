@@ -295,7 +295,18 @@ namespace TagLib.IFD
 				uint value_count = entry_data.Mid (4, 4).ToUInt (is_bigendian);
 				ByteVector offset_data = entry_data.Mid (8, 4);
 
-				IFDEntry entry = CreateIFDEntry (entry_tag, type, value_count, base_offset, offset_data, max_offset);
+				IFDEntry entry;
+
+				try
+				{
+					entry = CreateIFDEntry(entry_tag, type, value_count, base_offset, offset_data, max_offset);
+				}
+				catch (OverflowException)
+				{
+					// This exception occurs when the image does not have data in the expected format at the
+					// requested location.  The has been observed in images taken with an Olympus camera.
+					continue;
+				}
 
 				if (entry == null)
 					continue;
