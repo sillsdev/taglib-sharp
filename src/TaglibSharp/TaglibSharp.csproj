@@ -12,9 +12,9 @@
 
   <PropertyGroup>
     <Version>$(ReleaseVersion)</Version>
-    <PackageId>TagLibSharp</PackageId>
+    <PackageId>TagLibSharp-patched</PackageId>
     <Product>TagLib#</Product>
-    <Description>A library for for reading and writing metadata in media files, including video, audio, and photo formats.</Description>
+    <Description>A library for for reading and writing metadata in media files, including video, audio, and photo formats. This patched version contains some additional fixes that are not yet available upstream (PRs #143, #144, #145).</Description>
     <Copyright>Copyright (c) 2006-2007 Brian Nickel.  Copyright (c) 2009-2019 Other contributors</Copyright>
     <Authors>Brian Nickel, Gabriel Burt, Stephen Shaw, etc</Authors>
     <owners />
