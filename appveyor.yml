@@ -13,5 +13,10 @@ artifacts:
 - path: src/TaglibSharp/bin/Release/*.nupkg
   name: nuget package
 
+deploy:
+- provider: NuGet
+  api_key:
+    secure: J/zTFDbBs9ZTzStL+eqWi1yRRe5cofenCW9v8Tjz0p56OggFbsKNzqio0A4wH5cV
+
 on_failure:
 - appveyor PushArtifact msbuild.binlog
