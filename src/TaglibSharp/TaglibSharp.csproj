@@ -20,7 +20,7 @@
     <owners />
     <PackageProjectUrl>https://github.com/mono/taglib-sharp</PackageProjectUrl>
     <Company />
-    <PackageLicense>LGPL-2.1-only</PackageLicense>
+    <PackageLicenseExpression>LGPL-2.1-only</PackageLicenseExpression>
     <PackageReleaseNotes>Version $(ReleaseVersion)
 January 21, 2019
 * Lots and lots of updates including net462 and .netstandard 2.0</PackageReleaseNotes>
