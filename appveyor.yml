@@ -10,6 +10,8 @@ build_script:
 artifacts:
 - path: msbuild.binlog
   name: MSBuild Log
+- path: src/TaglibSharp/bin/Release/*.nupkg
+  name: nuget package
 
 on_failure:
 - appveyor PushArtifact msbuild.binlog

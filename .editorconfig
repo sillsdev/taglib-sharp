@@ -21,7 +21,7 @@ indent_style = space
 indent_size = 2
 
 # JSON files
-[*.json]
+[*.{json,yml}]
 indent_style = space
 indent_size = 2
 

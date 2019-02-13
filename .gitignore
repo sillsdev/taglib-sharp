@@ -22,7 +22,8 @@ docs/*.tree
 *.userprefs
 .*.swp
 packages
-.vs
+.vs/
+.idea/
 .DS_Store
 TestResult.xml
 src/TaglibSharp.Tests/samples/tmp*
